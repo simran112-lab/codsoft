@@ -1,0 +1,462 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    background: #000;
+    }
+
+.main-content {
+    position: relative; 
+    text-align: center;
+    color: #ffffff;  
+}
+
+.background-image {
+    width: 100%;
+     height: auto;
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:10px 5px;        
+}
+
+.navbar-logo h2{
+    font-family: "Nerko One", cursive;
+   color: #fff;
+   font-size: 200%;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    position:relative;
+    transition:color 0.25s;
+}
+
+.navbar-links a:hover {
+    background-color: #fffdfd;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.main-text h2{
+    position:absolute;
+    top:30%;
+    left:30%;
+    color: #fff;
+    padding:20px;
+    align-content: center;
+    font-size: 300%; 
+    font-family: "Agbalumo", system-ui;
+}
+
+.main-text h3{
+    position:absolute;
+    top:45%;
+    left:30%;
+    color: #fff;
+    padding:20px;
+    align-content: center;
+}
+    
+.main-text {
+    opacity: 10; /* Start with the element hidden */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fas-fa-rocket{
+    color: rgb(255, 255, 255)
+}
+
+.text h2{
+    font-size:medium;
+    color: #acaaaa;
+    position:absolute;
+    top:58%;
+    left:32%;
+
+
+}
+
+.login{
+    background-color: #000000; 
+    color: white;
+    border-color: #f1f1f1;
+    padding: 10px 50px; 
+    text-align: center; 
+    font-size: 15px; 
+    margin: 4px 2px;  
+    border-radius: 50px; 
+    position:absolute;
+    top:63%;
+    left:32%;
+  }
+
+.login:hover{
+    background-color: #434242;
+    color: #ffffff;
+  }
+.knowmore{
+    background-color: #000000; 
+    color: white; 
+    border-color: #f1f1f1;
+    padding: 10px 30px; 
+    text-align: center; 
+    font-size: 15px;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    position:absolute;
+    top:63%;
+    left:45%;
+  }
+
+.knowmore:hover{
+    background-color: #434242;
+    color: #ffffff;  
+
+}
+
+.about-us h1{
+    color: #fffdfd;
+    font-family:"Agbalumo", system-ui;
+    position: absolute;
+    top: 94%;
+    left: 5%;
+    font-size: 350%;
+}
+
+.content-wrapper {
+    display: flex; 
+    align-items: center; 
+    padding: 10px;
+}
+.asteroid img{
+    width: 75%;
+    height: 50%;
+    opacity: 0.5; 
+    display: block;
+    margin-right: 5px;
+    padding:10px;
+}
+
+.para-us p{
+    color: #fffdfd;
+    font-size: 120%;
+    font-family: "SUSE", sans-serif;
+}
+
+.planetsh{
+    font-size: 150%;
+    color:#fff;
+    display: grid;
+    place-items: center;
+    height: 20vh;
+    
+}
+
+.slider-wrapper{
+    max-width: 650px;
+    margin:0 auto 55px;
+    padding: 10px;    
+}
+
+.card-list .card-item{
+    color:#fffdfd;
+    user-select: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:50px;
+    background:rgba(0, 0, 0, 0.2);
+    border:1px solid rgb(254, 254, 254);
+    height: 440px;
+    width: 50px;
+    margin: 0 20px; 
+    box-shadow: 0 2px rgb(255, 255, 255);
+}
+
+.card-list .card-item .planet-image{
+    width: 250px;
+    height:250px;
+    object-fit: cover; 
+    margin-bottom: 1px; 
+}
+
+.planet-name{
+    font-family: "Agbalumo", system-ui;
+}
+
+.card-list .card-item .planet-description{
+    font-size: 1.rem;
+    color:#fffdfd;
+    font-weight: 500px;
+    margin: 10px 10px;
+    font-family: "SUSE", sans-serif;
+}
+
+.read-more{
+    font-size:1.rem;
+    padding:8px 20px;
+    color:black;
+    border-radius:6px;
+    font-weight:500;
+    cursor: pointer;
+    background:#fff;
+    border:1px solid transparent;
+    transition:0.2s ease;
+}
+
+.read-more:hover{
+    background:#3c3939;
+    border:1px solid white;
+    color:#fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+    background:#fff;
+    height: 5px;
+    width:5px
+}
+
+.slider-wrapper .swiper-slide-button{
+    color:#fff;
+    margin-top: -50px;
+}
+
+.slider-wrapper .swiper-slide-button{
+    color: rgb(255, 255, 255);
+}
+
+.swiper-slide{
+    width:5%;
+    height:5%;
+}
+
+.asteroidh{
+    font-size: 150%;
+    color:#fff;
+    display: grid;
+    place-items: center;
+    height: 20vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 300px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px rgb(255, 255, 255);
+    border:1px solid rgba(255, 255, 255, 0.5);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    
+    
+}
+
+.card:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+}
+
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-family: "Agbalumo", system-ui;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: .6;
+    font-family: "Agbalumo", system-ui;
+}
+
+.details .ceres {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    font-family: "SUSE", sans-serif;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.footer-section{
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-socialmedia img{
+width:50px;;
+height:50px;
+padding:10px;;
+}
+.footer-section h3 {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+.contact-form input{
+    width: 70%;
+    padding: 10px;
+    border-color:#000;
+    border-radius:10px;
+}
+.contact-form textarea {
+    width:70%;
+    padding:10px;
+    border-radius:10px;
+}
+
+.contact-form button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+   align-content: center;
+    
+}
+
+.contact-form button:hover {
+    background-color: #919192;
+    color: #000000;
+}
+
+.footer-down {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #aaa;
+}
